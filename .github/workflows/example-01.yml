@@ -1,0 +1,9 @@
+name: example01
+on: 
+  workflow_dispatch:
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+    name: test
+    steps:
+      - run: "echo the job triggered by ${{github.event_name}}"
