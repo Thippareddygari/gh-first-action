@@ -12,4 +12,5 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - run: |
-                echo "::summary 100 resources created ::Missing semicolon"
+                # echo "::summary 100 resources created ::Missing semicolon"
+                echo Hello world >> $GITHUB_STEP_SUMMARY
