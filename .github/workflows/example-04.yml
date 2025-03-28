@@ -1,6 +1,7 @@
 name: example04
 on: [push]
 jobs: 
+    #parallel jobs 
     Test1: 
         runs-on: ubuntu-latest
         steps:
