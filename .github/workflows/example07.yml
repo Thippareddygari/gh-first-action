@@ -6,7 +6,10 @@ jobs:
         steps:
             - run: |
                 echo "::error Intentional Error::missing semicolon" 
-                # exit 1
-       steps: 
+                exit 1
+
+    Test2:
+        runs-on: ubuntu-latest
+        steps: 
             - run: |
                 echo "::summary 100 resources created ::Missing semicolon"
