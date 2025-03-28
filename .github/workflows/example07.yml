@@ -5,5 +5,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: |
-                echo ":: Intentional error :: missing semicolon" 
+                echo "::error Intentional error ::missing semicolon" 
                 exit 1
