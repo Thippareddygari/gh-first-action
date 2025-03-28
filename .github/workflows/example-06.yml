@@ -1,0 +1,5 @@
+name: example-o6 
+on: [push]
+jobs:
+    call-common:
+        users: .github/workflows/common.yml

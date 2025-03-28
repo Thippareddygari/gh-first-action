@@ -1,0 +1,8 @@
+name: common
+on: [workflow_call]
+jobs:
+    #sequenetial jobs
+    Test1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "The comon ${{github.event_name}}"
